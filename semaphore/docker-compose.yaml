@@ -1,7 +1,7 @@
 services:
     semaphore:
         ports:
-            - 3000:3000
+            - 3001:3000
         image: semaphoreui/semaphore:v2.16.51
         environment:
             SEMAPHORE_DB_DIALECT: sqlite
