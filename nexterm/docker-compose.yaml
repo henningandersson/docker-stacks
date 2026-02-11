@@ -1,0 +1,12 @@
+services:
+  nexterm:
+    image: germannewsmaker/nexterm:latest
+    container_name: nexterm
+    network_mode: host
+    restart: always
+    environment:
+      - ENCRYPTION_KEY=37bcfde2d74eddfa7c0fe6ae9ecf73117b96ba8ac15b531fc2e0538da5753ca5
+    volumes:
+      - nexterm:/app/data
+volumes:
+  nexterm:
